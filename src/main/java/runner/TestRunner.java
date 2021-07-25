@@ -1,6 +1,5 @@
 package runner;
 
-import io.cucumber.core.cli.Main;
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
@@ -8,17 +7,18 @@ import org.junit.runner.RunWith;
 import java.util.stream.Stream;
 
 
-@RunWith(CucumberWithSerenity.class)
+/*@RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
         tags = "@Smoke",
-        features = {"src/main/resources/features"},
+        features = "src/test/resources/features",
         glue = {"steps"}
-)
-public class BDDRunner {
+)*/
+public class TestRunner {
     private static String[] defaultOptions = {
             "--glue", "steps",
-            "--plugin", "pretty",
+            "--tags", "@Smoke",
+            "--plugin", "pretty"
 
     };
     public static void main(String[] args) {
