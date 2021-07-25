@@ -7,18 +7,11 @@ import org.junit.runner.RunWith;
 import java.util.stream.Stream;
 
 
-/*@RunWith(CucumberWithSerenity.class)
-@CucumberOptions(
-        plugin = {"pretty"},
-        tags = "@Smoke",
-        features = "src/test/resources/features",
-        glue = {"steps"}
-)*/
 public class TestRunner {
     private static String[] defaultOptions = {
             "--glue", "steps",
             "--tags", "@Smoke",
-            "--plugin", "pretty"
+            "--plugin", "pretty","classpath:features/"
 
     };
     public static void main(String[] args) {
