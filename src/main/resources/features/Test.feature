@@ -3,7 +3,7 @@ Feature: ContactUs Form
 
   Background:
     Given user access the webdriveruniversity.com
-  @Smoke
+  @Regression
   Scenario Outline: Submit message via the contactUs form
     When clicks on the ContactUs Form link
 #    And enters a valid firstname
@@ -16,7 +16,3 @@ Feature: ContactUs Form
     Examples:
       | commentsText                          | outputMsg                   |
       | The information needs to be submitted | Thank You for your Message! |
-
-
-
-
