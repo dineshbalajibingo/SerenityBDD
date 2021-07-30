@@ -14,28 +14,31 @@ public class ContactUsSteps {
     @Given("user access the webdriveruniversity.com")
     public void user_access_the_webdriveruniversity_com() {
         //contactUsAction.launchURl();
-        System.out.println("Printing 1");
+        //System.out.println("Printing 1");
     }
 
     @When("clicks on the ContactUs Form link")
     public void clicks_on_the_contact_us_form_link() {
        // contactUsAction.clickContactUsLink();
-        System.out.println("Printing 2");
+        System.out.println("Printing @Smoke");
     }
 
     @When("enters a valid firstname")
     public void enters_a_valid_firstname() {
-        contactUsAction.enterFirstName();
+        //contactUsAction.enterFirstName();
+        System.out.println("Printing @Smoke");
     }
 
     @When("enters a valid lastname")
     public void enters_a_valid_lastname() {
-        contactUsAction.enterLastName();
+       // contactUsAction.enterLastName();
+        System.out.println("Printing @Regression");
     }
 
     @When("enters an email address")
     public void enters_an_email_address() {
-        contactUsAction.enterEmail();
+       // contactUsAction.enterEmail();
+        System.out.println("Printing @Regression");
     }
     @When("^provide additional comments as (.*) in the comments box$")
     public void provide_additional_comments_in_the_comments_box(String commentsText) {

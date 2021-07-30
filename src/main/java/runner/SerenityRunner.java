@@ -14,9 +14,10 @@ import java.util.Arrays;
 import java.util.function.Supplier;
 
 public class SerenityRunner {
+
     public static void main(String[] args) throws IOException {
         Path path = Paths.get(System.getProperty("user.dir"));
-        String tags = "@Smoke";
+        String tags = "(@Smoke or @Regression)";
         ArrayList<String> propList = new ArrayList<>(
                 Arrays.asList("--glue", "steps",
                         "--tags", tags,
